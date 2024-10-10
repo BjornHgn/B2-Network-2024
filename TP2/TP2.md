@@ -1,7 +1,5 @@
 # TP2 : Environnement virtuel
 
-## Compte-rendu
-
 ☀️ Sur **`node1.lan1.tp2`**
 
 ```Powershell
@@ -40,8 +38,7 @@ traceroute to 10.1.2.12 (10.1.2.12), 30 hops max, 60 byte packets
  2  10.1.2.12 (10.1.2.12)  2.843 ms !X  4.631 ms !X  4.542 ms !X
 ```
 
-# II. Interlude accès internet
-
+## II. Interlude accès internet
 
 ☀️ **Sur `router.tp2`**
 
@@ -78,7 +75,7 @@ PING 142.251.37.238 (142.251.37.238) 56(84) bytes of data.
 64 bytes from 142.251.37.238: icmp_seq=3 ttl=111 time=28.2 ms
 ```
 
-# III. Services réseau
+## III. Services réseau
 
 ☀️ **Sur `web.lan2.tp2`**
 
@@ -175,6 +172,7 @@ subnet 10.1.1.0 netmask 255.255.255.0 {
      Loaded: loaded (/usr/lib/systemd/system/dhcpd.service; disabled; preset: disabled)
      Active: active (running) since Fri 2024-10-04 11:50:14 CEST; 1min 29s ago
 ```
+
 ☀️ **Sur `node1.lan1.tp2`**
 
 ```Powershell
