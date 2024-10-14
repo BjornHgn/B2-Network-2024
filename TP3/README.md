@@ -155,7 +155,7 @@ subnet 10.3.1.0 netmask 255.255.255.0 {
 ```Powershell
 PC4> dhcp -r
 DDORA
-PC4> ip a IP 10.3.1.100/24
+PC4> show IP 10.3.1.100/24
 No router answered ICMPv6 Router Solicitation
 ```
 
