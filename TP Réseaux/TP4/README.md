@@ -179,23 +179,3 @@ google.com resolved to 142.250.200.206
 [Conf Routeur](conf_sw3.md)
 
 [Conf Routeur](conf_sw1.md)
-
-🌞  **Mettre en place un serveur DHCP dans le nouveau bâtiment**
-
-- il doit distribuer des IPs aux clients dans le réseau `clients` qui sont branchés au même switch que lui
-- sans aucune action manuelle, les clients doivent...
-  - avoir une IP dans le réseau `clients`
-  - avoir un accès au réseau `servers`
-  - avoir un accès WAN
-  - avoir de la résolution DNS
-
-> Réutiliser un serveur DHCP qu'on a monté dans un autre TP si vous avez.
-
-🌞  **Vérification**
-
-- un client récupère une IP en DHCP
-- il peut ping le serveur Web
-- il peut ping `1.1.1.1`
-- il peut ping `ynov.com`
-
-FAIRE UN AUTRE REPO AVEC TOUT LES FICHIERS PY + METTRE DANS CE DOSSIER DEV JUSTE MARKDOWN AVEC LIEN REPO DEV + FICHIER CONF EQUIPËMENT TP RESEAU EN TXT AVEC LIEN DANS CE FICHIER.
