@@ -84,9 +84,13 @@ GATEWAY     : 10.6.1.254
 🌞 **Configurer OSPF sur tous les routeurs**
 
 [Setup Routeur 5](r5_setup.md)
+
 [Setup Routeur 4](r4_setup.md)
+
 [Setup Routeur 3](r3_setup.md)
+
 [Setup Routeur 2](r2_setup.md)
+
 [Setup Routeur 1](r1_setup.md)
 
 🌞 **Test**
@@ -111,24 +115,6 @@ PC2> ping 10.6.3.11
 [Capture traffic OSPF](tp6_ospf.pcapng)
 
 ## III. DHCP relay
-
-➜ **Un problème très récurrent pour pas dire omniprésent avec DHCP c'est que ça marche que dans un LAN.**
-
-Si t'as un serveur DHCP, et plein de réseaux comme c'est le cas ici, c'est le bordel :
-
-- un DHCP Request, qui part en broadcast ne passe pas un routeur
-  - il est cantonné au LAN
-- en effet, pour changer de réseau, il faut construire des paquets IP
-  - or, un DHCP request, c'est juste une trame Ethernet, pas de paquet IP dedans
-- et donc, quand tu fais ton DHCP Request c'est ça que tu cherches : avoir une IP
-- dans notre topo actuelle, impossible que John contacte le serveur DHCP
-
-➜ **DHCP Relay !**
-
-- on va demander à un routeur, s'il reçoit des trames DHCP de les faire passer vers notre serveur DHCP
-- si le serveur DHCP le supporte, il répondra donc au routeur, qui fera passer au client
-
-> *Spoiler alert, le serveur qu'on utilise depuis l'an dernier, fourni dans les dépôts Rocky, le supporte.*
 
 🌞 **Configurer un serveur DHCP** sur `dhcp.tp6.b1`
 
